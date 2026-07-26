@@ -16,7 +16,7 @@
 set -euo pipefail
 
 # ─── Configuration ───────────────────────────────────────────────────────────
-LOG_DIR="$HOME/log"
+LOG_DIR="$HOME/log/brain"
 MAX_FILES=50           # safety cap on number of .md files to ingest
 MAX_FILE_SIZE=102400   # skip files larger than 100KB individually
 # ─────────────────────────────────────────────────────────────────────────────
@@ -99,16 +99,13 @@ build_prompt() {
     local context="$1"
     local user_query="${2:-}"
 
-    local prompt="You are my **Second Brain LLM**. Your role:
+    local prompt="You are my **Second Brain & Flow Assistant**.
 
-- You have access to my personal notes and logs from ~/log/
-- Use them as your knowledge base to answer questions, find patterns, recall decisions, and surface insights
-- When referencing information, cite which file it came from
-- If you don't find relevant info in the notes, say so clearly, then help with general knowledge
-- Be concise but thorough
+- Your knowledge base comes from active notes in ~/log/brain/
+- Help me get straight into flow state: review active goals, clear friction, and focus on next actions
+- Be concise, direct, and actionable
 
-Here are my notes:
-
+Active Notes:
 ${context}"
 
     if [[ -n "$user_query" ]]; then
