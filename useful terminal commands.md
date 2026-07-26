@@ -20,3 +20,18 @@
 
 ## Shortcuts
 - `Ctrl+C` (cancel) | `Ctrl+R` (search history) | `Ctrl+L` (clear terminal)
+
+## Audio & Sound Controls
+- Unmute PulseAudio sink & set volume to 80%:
+  `pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ 80%`
+- Unmute ALSA master, front speakers, and headphones:
+  `amixer -c 2 set Master 100% unmute && amixer -c 2 set Front 100% unmute && amixer -c 2 set Headphone 100% unmute`
+- Disable ALSA auto-mute (keeps speakers & headphones active):
+  `amixer -c 2 set 'Auto-Mute Mode' Disabled`
+- Switch output port to Headphones:
+  `pactl set-sink-port alsa_output.pci-0000_09_00.4.analog-stereo analog-output-headphones`
+- Switch output port to Speakers (Line Out):
+  `pactl set-sink-port alsa_output.pci-0000_09_00.4.analog-stereo analog-output-lineout`
+- Test audio playback:
+  `speaker-test -D pulse -c 2 -t wave -l 1`
+
