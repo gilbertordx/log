@@ -99,11 +99,11 @@ build_prompt() {
     local context="$1"
     local user_query="${2:-}"
 
-    local prompt="You are my **Second Brain & Flow Assistant**.
+    local prompt="You are my Second Brain assistant.
 
-- Your knowledge base comes from active notes in ~/log/brain/
-- Help me get straight into flow state: review active goals, clear friction, and focus on next actions
-- Be concise, direct, and actionable
+- Knowledge base: ~/log/brain/
+- Review active goals and next actions.
+- Be concise and direct.
 
 Active Notes:
 ${context}"
