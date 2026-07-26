@@ -1,5 +1,8 @@
 # SCHEMA
-/raw/: Read-only.
+/raw/: Read-only project inputs.
+  - /raw/logbook/: Study (Personal)
+  - /raw/log/: Study (General)
+  - /raw/markethouse/: Work
 /wiki/: AI nodes.
 index.md: Catalog.
 log.md: History.
