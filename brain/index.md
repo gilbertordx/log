@@ -3,7 +3,7 @@
 ## Projects (/raw/)
 - **logbook**: Study (Personal)
 - **log**: Study (General)
-- **markethouse**: Work
+- **markethouse**: Work — [[markethouse]]
 
 ## Wiki Nodes (/wiki/)
-- *No nodes yet.*
+- [[markethouse]]: PCP Flow Manager for MarketHouse furniture manufacturing.
