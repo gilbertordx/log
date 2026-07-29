@@ -4,7 +4,7 @@ Automations, scripts, and repository setup.
 
 ## Automations & Scripts
 - **Second Brain (`~/log/agy-second-brain.sh`)**: Launches `agy` loaded with notes in `~/log/brain/`.
-- **Autostart**: XDG entries in `~/.config/autostart/` launching Brave (`github.com/g77111125`), `/log` folder, and AGY terminal on boot.
+- **Autostart**: XDG entries in `~/.config/autostart/` launching Brave (`github.com/gilbertordx`), `/log` folder, and AGY terminal on boot.
 - **Bluetooth (`~/log/bt-connect.sh`)**: Auto-connects Logitech K380 keyboard.
 
 ## Repository Files (`~/log/`)

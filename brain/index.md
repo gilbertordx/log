@@ -6,10 +6,15 @@
 
 ## Wiki Nodes (/wiki/)
 - [[bluetooth]]: Realtek RTL8761BU driver fixes & K380 pairing procedures.
+- [[css3]]: Cascading Style Sheets standard.
+- [[github]]: Account repositories and sync settings (`gilbertordx`).
 - [[javascript]]: ES Modules client-side architecture.
 - [[logbook]]: Personal workout & routine tracking web application.
 - [[markethouse]]: Real-time PCP Flow Manager for furniture manufacturing.
 - [[nestjs]]: Backend server framework (`AuthGuard`, `RolesGuard`, Prisma).
 - [[postgres]]: Relational database & Docker persistence.
 - [[prisma]]: Type-safe ORM for database migrations & queries.
+- [[pwa]]: Progressive Web Application standard.
 - [[react]]: Frontend component architecture (Vite, Tailwind, shadcn).
+- [[second-brain]]: Vault architecture and AGY CLI automation suite.
+- [[wikilinks]]: Double-bracket link syntax for knowledge nodes.
