@@ -14,8 +14,9 @@ from pathlib import Path
 DEFAULT_RESUME = Path(os.path.expanduser("~/log/brain/raw/resume/overview.md"))
 
 STANDARD_ATS_HEADERS = [
-    "summary", "skills", "technical projects", "experience",
-    "professional experience", "education", "certifications"
+    "summary", "resumo", "skills", "habilidades", "technical projects", "projetos",
+    "experience", "experiência", "professional experience", "experiência profissional",
+    "education", "formação", "certifications", "certificações"
 ]
 
 def parse_resume_to_ats_json(resume_path):

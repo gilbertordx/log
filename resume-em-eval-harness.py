@@ -21,15 +21,17 @@ BANNED_BUZZWORDS = [
 STRONG_ACTION_VERBS = [
     "architected", "engineered", "built", "deployed", "implemented",
     "trained", "delivered", "conducted", "modeled", "automated",
-    "designed", "reduced", "compressed", "scaled", "created"
+    "designed", "reduced", "compressed", "scaled", "created",
+    "desenvolvi", "executei", "automatizei", "estruturei", "implementei",
+    "capacitei", "modelei", "realizei"
 ]
 
 METRIC_PATTERNS = [
     r'\d+%',                                              # Percentage (e.g. 90%, 25%)
-    r'\d+\s*(?:min|sec|sec|hours|h|m|s|minutes|seconds)\b', # Time metrics
-    r'\$\d+',                                             # Currency ($)
+    r'\d+\s*(?:min|sec|sec|hours|h|m|s|minutes|seconds|segundos|minutos)\b', # Time metrics
+    r'\$\d+|\bR\$\d+',                                    # Currency ($ or R$)
     r'\d+,\d+\+|\d+\+',                                   # Counts (e.g. 1,200+, 300+)
-    r'\b\d+\s*(?:operators|clients|projects|components|models)\b', # Entity counts
+    r'\b\d+\s*(?:operators|clients|projects|components|models|operadores|projetos|lotes|projetos)\b', # Entity counts
     r'\b\d+\b'                                            # General numbers
 ]
 
@@ -51,7 +53,7 @@ def evaluate_resume(resume_path):
     for line in lines:
         if line.startswith("## "):
             sec_name = line.replace("## ", "").strip().lower()
-            if "project" in sec_name or "experience" in sec_name or "work" in sec_name:
+            if any(k in sec_name for k in ["project", "projetos", "experience", "experiência", "work"]):
                 in_target_section = True
             else:
                 in_target_section = False

@@ -4,7 +4,7 @@
 - **clippings**: Web Article Clippings — [[raw/clippings/examplecom-clipping|Example Clipping]]
 - **logbook**: Personal PWA Workout Tracker — [[logbook]], [[raw/logbook/overview|Overview]]
 - **markethouse**: PCP Flow Manager — [[markethouse]], [[raw/markethouse/overview|Overview]], [[raw/markethouse/domain-architecture|Domain Architecture]], [[raw/markethouse/backend-api|Backend API]]
-- **resume**: Professional CV & Career Architecture — [[raw/resume/overview|Curriculum Vitae]], [[raw/resume/Gilberto_Ramos_Model_Resume|Model Resume]], [[raw/resume/tailored/cloud-devsecops-engineer|Cloud/DevSecOps Variant]], [[raw/resume/tailored/applied-ai-rag-engineer|Applied AI/RAG Variant]]
+- **resume**: Professional CV & Career Architecture — [[raw/resume/overview|Curriculum Vitae]], [[raw/resume/Gilberto_Ramos_Model_Resume|Model Resume]], [[raw/resume/tailored/cloud-devsecops-engineer|Cloud/DevSecOps Variant]], [[raw/resume/tailored/applied-ai-rag-engineer|Applied AI/RAG Variant]], [[raw/resume/tailored/confianca-supermercados-sql-extracao|Confiança SQL Extração Variant]]
 
 ## Wiki Nodes (/wiki/)
 - [[aws]]: Amazon Web Services cloud infrastructure (ECR, S3, IAM).
