@@ -1,8 +1,9 @@
 # Catalog
 
-## Projects (/raw/)
-- **logbook**: Personal PWA Workout Tracker — [[logbook]]
-- **markethouse**: PCP Flow Manager — [[markethouse]]
+## Projects & Ingestions (/raw/)
+- **clippings**: Web Article Clippings — [[raw/clippings/examplecom-clipping|Example Clipping]]
+- **logbook**: Personal PWA Workout Tracker — [[logbook]], [[raw/logbook/overview|Overview]]
+- **markethouse**: PCP Flow Manager — [[markethouse]], [[raw/markethouse/overview|Overview]], [[raw/markethouse/domain-architecture|Domain Architecture]], [[raw/markethouse/backend-api|Backend API]]
 
 ## Wiki Nodes (/wiki/)
 - [[bluetooth]]: Realtek RTL8761BU driver fixes & K380 pairing procedures.
