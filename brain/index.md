@@ -8,3 +8,5 @@
 ## Wiki Nodes (/wiki/)
 - [[logbook]]: Personal workout & routine tracking web application.
 - [[markethouse]]: PCP Flow Manager for MarketHouse furniture manufacturing.
+- [[bluetooth]]: Bluetooth system hardware, driver fixes, and pairing procedures.
+
