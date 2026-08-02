@@ -43,6 +43,8 @@ show_help() {
     echo "  ./agy-second-brain.sh --list       List all loaded .md note files"
     echo "  ./agy-second-brain.sh --clip <URL> Clip web page article into raw/clippings/"
     echo "  ./agy-second-brain.sh --lint       Run vault broken link & schema diagnostic linter"
+    echo "  ./agy-second-brain.sh --em-eval    Run Engineering Manager rejection & metric audit"
+    echo "  ./agy-second-brain.sh --ats-parse  Run ATS candidate JSON parsing & JD keyword match"
     echo "  ./agy-second-brain.sh --sync       Git add, commit, and push vault to GitHub"
     echo "  ./agy-second-brain.sh --help       Show this help menu"
     echo ""
@@ -154,6 +156,17 @@ main() {
 
         --lint)
             bash "$SCRIPT_DIR/brain-linter.sh" "$LOG_DIR"
+            exit 0
+            ;;
+
+        --em-eval)
+            python3 "$SCRIPT_DIR/resume-em-eval-harness.py" "${2:-}"
+            exit 0
+            ;;
+
+        --ats-parse)
+            shift
+            python3 "$SCRIPT_DIR/resume-ats-parse-harness.py" "$@"
             exit 0
             ;;
 
